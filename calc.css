@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: #000000;
+
+    font-family: Arial;
+}
+
+/* Calculator container */
+.calculator {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    width: 260px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Display (top section) */
+.display {
+    background: #2a2a2a; /* improved contrast */
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* History text */
+#history {
+    font-size: 14px;
+    color: #bbb;
+    min-height: 18px;
+}
+
+/* Result text */
+#result {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* All buttons */
+.btn {
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+.btn:hover {
+    background: #555;
+}
+
+/* Orange buttons (operators) */
+.orange {
+    background: orange;
+    color: white;
+}
+
+/* Gray buttons (AC, DEL) */
+.gray {
+    background: #a5a5a5;
+    color: black;
+}
+
+/* Zero button */
+.zero {
+    grid-column: span 2;
+    border-radius: 30px;
+}
