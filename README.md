@@ -55,7 +55,7 @@ start calc.html
 ##  Project Structure
 
 ```
-Calculator/
+Calculator_project/
 │── calc.html
 │── calc.css
 │── calc.js
